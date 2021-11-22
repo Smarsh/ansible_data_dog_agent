@@ -1,0 +1,5 @@
+---
+# vars file for activemq
+host: 'localhost'
+port: '1099'
+
