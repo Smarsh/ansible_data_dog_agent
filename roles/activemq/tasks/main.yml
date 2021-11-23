@@ -7,13 +7,3 @@
     owner: 'dd-agent'
     group: root
     mode: '0600'
-  tags: agent-default
-
-- name: Template a file to agent6 /etc/activemq.d/conf.yaml
-  ansible.builtin.template:
-    src: templates/activemq.yaml.j2
-    dest: /etc/datadog-agent/conf.d
-    owner: 'dd-agent'
-    group: root
-    mode: '0600'
-  tags: agent6
