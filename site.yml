@@ -5,4 +5,5 @@
   become: true
 
   roles:
-    - datadog_dependencies
+    - integration
+    - activemq

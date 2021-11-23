@@ -1,2 +1,13 @@
 ---
-# tasks file for integration
+- name: Install rubydev packagesn for Ubuntu
+  apt:
+    name: ruby-dev
+    state: present
+  when: (ansible_facts['distribution'] == "Ubuntu")
+
+- name: Install rubydev packages
+  apt:
+    name: ruby-devel
+    state: present
+  when: (ansible_facts['distribution'] == "Centos")
+
