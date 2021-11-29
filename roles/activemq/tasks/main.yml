@@ -1,5 +1,10 @@
 ---
 # tasks file for activemq
+- name: Creates /etc/dd-agent/conf.d/ directory
+  file:
+    path: /etc/dd-agent/conf.d/
+    state: directory
+    
 - name: Template a file to /etc/activemq.d/conf.yaml
   ansible.builtin.template:
     src: templates/activemq.yaml.j2
